@@ -1,0 +1,4 @@
+Name       = UnlimitedSelfSwitches
+Version    = 1.1
+Essentials = 20.1
+Credits    = mej71, adattato da Ruby
