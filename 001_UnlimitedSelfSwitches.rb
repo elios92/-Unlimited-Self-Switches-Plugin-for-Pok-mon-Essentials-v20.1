@@ -65,7 +65,14 @@ def pbAdvancedToolsMenu
         when 2 # Esportazione Mappe ed Eventi
           pbMessage(_INTL("Esportazione Mappe ed Eventi non ancora implementata.\nQuesta funzione permetterà di esportare e importare mappe ed eventi."))
         when 3 # Utilità di Debug
-          pbMessage(_INTL("Utilità di Debug non ancora implementate.\nQuesta funzione conterrà strumenti di debug avanzati."))
+          puts "[DEBUG] Aprendo il menu Utilità di Debug"
+          begin
+            pbDebugUtilitiesMenu
+          rescue => e
+            puts "[ERROR] Errore nel menu Utilità di Debug: #{e.message}"
+            puts e.backtrace.join("\n") if $DEBUG
+            pbMessage(_INTL("Si è verificato un errore: {1}", e.message))
+          end
         when 4 # Esci
           puts "[DEBUG] Uscita dal menu Strumenti Avanzati"
           break
