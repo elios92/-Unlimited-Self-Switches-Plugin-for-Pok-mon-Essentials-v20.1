@@ -1,0 +1,7 @@
+Name       = VS Seeker
+Version    = 1.0
+Essentials = 20.1
+Credits    = elios92, assistant
+Website    = 
+Link       = 
+Requires   = Unlimited Self Switches
