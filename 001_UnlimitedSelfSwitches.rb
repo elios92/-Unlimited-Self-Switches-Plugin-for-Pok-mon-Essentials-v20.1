@@ -20,6 +20,7 @@ def pbAdvancedToolsMenu
   # Comandi del menu principale
   commands = [
     "Gestione Switch Personalizzate",  # Sottomenu per le UnlimitedSelfSwitches
+    "VS Seeker",                       # Sistema per ri-sfidare allenatori
     "Gestione delle Traduzioni",       # Per gestione multilingua del gioco
     "Esportazione Mappe ed Eventi",    # Per export/import di mappe e eventi
     "Utilità di Debug",                # Per strumenti di debug personalizzati
